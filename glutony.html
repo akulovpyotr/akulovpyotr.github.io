@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>canvasExample</title>
+  <meta charset='utf-8' />
+  <link href="style.css" rel="stylesheet">
+  <script>
+    function er1() {
+      var Skv = Number(document.getElementById("x_znach").value);
+      var Sokr = Number(document.getElementById("y_znach").value);
+      var a = Math.sqrt(Skv);
+      var diam = Math.sqrt(Sokr / (3.14 / 4));
+      var diag = Math.sqrt(2) * a;
+      if (a > diam) {
+        document.getElementById("otvet").innerHTML = "krug v kvadrate";
+      } else {
+        if (diag < diam) {
+          document.getElementById("otvet").innerHTML = " kvadrate v kruge ";
+        } else {
+          document.getElementById("otvet").innerHTML = "peresechenie";
+        }
+      }
+    }
+  </script>
+</head>
+
+<body>
+  площадь круга=
+  <input type="text" value="0" id="x_znach">
+  <br> площадь квадрата=
+  <input type="text" value="0" id="y_znach">
+  <br>
+  <div class="container">
+    <a href="#" class="button apple" onclick="er1()"><span><i class="icon-apple"></i></span><p>apple</p></a></div>
+
+
+
+
+  <a href="#" onclick="er2()" class="button purple">3.31б</a>
+
+  <br>
+
+  <br>
+
+  <div id="otvet"></div>
+</body>
+
+</html>
