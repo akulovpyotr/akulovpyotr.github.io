@@ -1,0 +1,113 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function func1() {
+      document.getElementById("otvet1").innerHTML = ""
+        a = Number(document.getElementById("a_f1_znach").value);
+          n = Number(document.getElementById("n_f3_znach").value);
+          var s=0;
+      var i = a;
+    while (i <= n) {
+      s=s+i;
+        document.getElementById("otvet1").innerHTML = document.getElementById("otvet1").innerHTML + i +  " "+s+"<br>";
+        i++;
+      } ;
+    }
+
+   function func2() {
+      document.getElementById("otvet2").innerHTML = ""
+        a = Number(document.getElementById("a_f2_znach").value);
+          n = Number(document.getElementById("n_f4_znach").value);
+          var s=1;
+      var i = a;
+    while (i <= n) {
+      s=s*i;
+        document.getElementById("otvet2").innerHTML = document.getElementById("otvet2").innerHTML + i +  " " +s+"<br>";
+        i++;
+      } 
+    }
+
+     function func3() { 
+document.getElementById("otvet3").innerHTML =""; 
+var a = Number(document.getElementById("a_f4_znach").value); 
+var b = Number(document.getElementById("b_f4_znach").value); 
+var x=b-a+1; 
+var sum=0; 
+while (a <= b) { 
+sum=sum+a; 
+document.getElementById("otvet3").innerHTML = document.getElementById("otvet3").innerHTML + a + " " +sum +"<br>" ; 
+a++; 
+} 
+document.getElementById("otvet3").innerHTML = document.getElementById("otvet3").innerHTML +sum/x +"<br>" ; 
+} 
+
+   
+function func5() { 
+document.getElementById("otvet5").innerHTML = ""; 
+a = Number(document.getElementById("a_f5_znach").value); 
+b = Number(document.getElementById("b_f5_znach").value); 
+var s = 0 
+while (a <= b){ 
+s=s+a*a 
+document.getElementById("otvet5").innerHTML = document.getElementById("otvet5").innerHTML + a*a +" "+s + "<br> "; 
+a++; 
+} 
+} 
+
+
+
+
+  </script>
+</head>
+
+<body>
+
+<h1>Цикл  while</h1> a=
+  <input type="text" value="4" id="a_f1_znach"> n=
+    <input type="text" value="10" id="n_f3_znach">
+  <a href="#" onclick="func1()" class="button yellow text-blanco text-shadow-negra">♂</a>
+  <div id="otvet1"></div>
+<br>
+  <br>
+
+<br>
+  <br>
+  <br>
+  <br>
+  <h1>Цикл Do while</h1> a=
+  <input type="text" value="1" id="a_f2_znach"> n=
+    <input type="text" value="10" id="n_f4_znach">
+  <a href="#" onclick="func2()" class="button yellow text-blanco text-shadow-negra">♂</a>
+  <div id="otvet2"></div>
+<br>
+  <br>
+  <br>
+  <br>
+  <h1>Цикл  while</h1> a=
+  <input type="text" value="4" id="a_f4_znach"> n=
+    <input type="text" value="10" id="b_f4_znach">
+  <a href="#" onclick="func3()" class="button yellow text-blanco text-shadow-negra">♂</a>
+  <div id="otvet3"></div>
+<br>
+  <br>
+
+<br>
+  <br>
+  <br>
+  <br>
+  
+<h1>5.30г</h1> a= 
+<input type="text" value="1" id="a_f5_znach"> 
+b= 
+<input type="text" value="3" id="b_f5_znach"> 
+<a href="#" onclick="func5()" class="button text-blanco text-shadow-negra">5.30г </a> 
+<div id="otvet5"></div> 
+<br> 
+<br> 
+<br> 
+<br> 
+
+</body>
+</html>
